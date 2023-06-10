@@ -3607,7 +3607,7 @@ function Library:CreateWindow(...)
             if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
                 task.spawn(Library.Toggle)
             end
-        elseif Input.KeyCode == Enum.KeyCode.L or (Input.KeyCode == Enum.KeyCode.M and (not Processed)) then
+        elseif Input.KeyCode == Enum.KeyCode.F4 or (Input.KeyCode == Enum.KeyCode.L and (not Processed)) then
             task.spawn(Library.Toggle)
         end
     end))
